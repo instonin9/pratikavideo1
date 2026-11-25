@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+header {
+    background: #1f2d3d;
+    color: #fff;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header a { color: #fff; text-decoration: none; margin-left: 16px; }
+header a:hover { text-decoration: underline; }
+.logo { font-weight: bold; font-size: 20px; }
+.container { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+.card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+h1, h2 { margin-top: 0; }
+form label { display: block; margin-top: 10px; font-weight: bold; }
+form input[type=text], form input[type=email], form input[type=password],
+form textarea, form select, form input[type=file] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button, .btn {
+    display: inline-block;
+    background: #2c7be5;
+    color: #fff;
+    border: 0;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+button:hover, .btn:hover { background: #1a5bbf; }
+.btn-secondary { background: #6c757d; }
+.btn-danger { background: #c0392b; }
+.error { color: #c0392b; margin-top: 8px; }
+.success { color: #1e7e34; margin-top: 8px; }
+video { width: 100%; max-height: 480px; background: #000; border-radius: 4px; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.video-item { background: #fff; border-radius: 6px; padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.video-item h3 { margin: 0 0 6px 0; font-size: 16px; }
+.meta { color: #666; font-size: 13px; }
+.comment { border-top: 1px solid #eee; padding: 8px 0; }
+.comment .author { font-weight: bold; }
+.status { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 12px; color: #fff; }
+.status-none { background: #1e7e34; }
+.status-violation { background: #e67e22; }
+.status-shadow { background: #8e44ad; }
+.status-ban { background: #c0392b; }
+.inline-form { display: inline-block; }
